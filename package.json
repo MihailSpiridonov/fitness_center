@@ -1,7 +1,7 @@
 {
-  "name": "liga-a-supergym",
+  "name": "liga-a--fitness_center_supergym",
   "version": "2.0.0",
-  "description": "Фитнес-центр Supergym",
+  "description": "Проект: Фитнес-центр Supergym",
   "browserslist": [
     "last 3 versions",
     "IE 11",

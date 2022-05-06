@@ -23,7 +23,7 @@ const css = () => {
       .pipe(postcss([autoprefixer({
         grid: true,
       })]))
-      .pipe(gcmq()) // выключите, если в проект импортятся шрифты через ссылку на внешний источник
+      .pipe(gcmq())
       .pipe(gulp.dest('build/css'))
       .pipe(csso())
       .pipe(rename('style.min.css'))
@@ -113,10 +113,6 @@ const refresh = (done) => {
   done();
 };
 
-const build = gulp.series(clean, svgo, copy, css, sprite, js);
-
-const start = gulp.series(build, syncServer);
-
 // Optional tasks
 //---------------------------------
 
@@ -127,7 +123,7 @@ const start = gulp.series(build, syncServer);
 // root = 'content/' - webp добавляются и обновляются только в source/img/content/
 
 const createWebp = () => {
-  const root = '';
+  const root = 'content/';
   return gulp.src(`source/img/${root}**/*.{png,jpg}`)
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest(`source/img/${root}`));
@@ -141,6 +137,10 @@ const optimizeImages = () => {
       ]))
       .pipe(gulp.dest('build/img'));
 };
+
+const build = gulp.series(clean, svgo, copy, css, sprite, js);
+
+const start = gulp.series(clean, svgo, copy, css, createWebp, optimizeImages, sprite, js, syncServer);
 
 exports.imagemin = optimizeImages;
 exports.webp = createWebp;

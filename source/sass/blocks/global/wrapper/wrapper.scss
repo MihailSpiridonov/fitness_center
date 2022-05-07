@@ -1,0 +1,23 @@
+.wrapper {
+  min-width: 1160px;
+  width: 95vw;
+  max-width: 1160px;
+  padding: 0;
+  margin: 0 auto;
+
+  @media (max-width: $small-desktop-width) {
+    //min-width: 1024px;
+    //width: 95vw;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: $tablet-width) {
+    min-width: 678px;
+    width: 88vw;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: 290px;
+    width: 91vw;
+  }
+}

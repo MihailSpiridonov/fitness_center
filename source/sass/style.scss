@@ -1,25 +1,38 @@
-// Vendor
 // ---------------------------------
-
-@import "vendor/normalize";
-// Swiper 7.4.1
-// @import "vendor/swiper";
 
 // Global
-// ---------------------------------
+@import "blocks/global/normalize.scss";
+@import "blocks/global/variables.scss";
+@import "blocks/global/fonts.scss";
+@import "blocks/global/global.scss";
+@import "blocks/global/page/page.scss";
+@import "blocks/global/wrapper/wrapper.scss";
 
-@import "variables";
-@import "mixins";
-@import "global/fonts";
-@import "global/reboot";
-@import "global/utils";
-@import "global/container";
+// Header
+@import "blocks/header/header.scss";
+@import "blocks/logo/logo.scss";
+@import "blocks/header/nav/nav.scss";
 
-// Blocks
-// ---------------------------------
+// Main
+@import "blocks/main/main-block/main-block.scss";
+@import "blocks/main/advantages/advantages.scss";
+@import "blocks/main/about/about.scss";
+@import "blocks/main/services/services.scss";
+@import "blocks/main/section-form/section-form.scss";
+@import "blocks/main/form/form.scss";
 
-@import "blocks/btn";
-@import "blocks/modal";
+// Footer
+@import "blocks/footer/footer.scss";
+@import "blocks/footer/socials/socials.scss";
+@import "blocks/footer/site-sections/site-sections.scss";
+@import "blocks/footer/contacts/contacts.scss";
+@import "blocks/footer/accordion/accordion.scss";
+
+// Popup
+@import "blocks/popup/popup.scss";
+
+// Разводящая страница
+@import "page-for-link/page-for-link.scss";
 
 // ---------------------------------
 

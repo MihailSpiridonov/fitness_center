@@ -1,81 +1,61 @@
 .header {
-  position: fixed;
   z-index: 2;
   width: 100vw;
-  min-height: 120px;
-  padding: 30px 0;
+  min-height: 50px;
+  padding: 0;
+  padding-top: 30px;
   margin: 0;
-  background: $background-header;
   box-sizing: border-box;
 
   @media (max-width: $tablet-width) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    min-height: 100px;
-    padding: 20px 0;
+    min-height: 57px;
+    padding-top: 40px;
   }
 
   @media (max-width: $mobile-width) {
-    min-height: 70px;
-    padding: 15px 0;
+    min-height: 35px;
+    padding-top: 20px;
   }
 }
 
 .header__wrapper {
   display: flex;
   justify-content: space-between;
-  padding-right: 60px;
+}
 
-  @media (max-width: $small-desktop-width) {
-    padding: 0 20px;
-  }
+.header__logo {
+  padding: 0;
+  margin: 0;
+}
+
+.header__number a {
+  font-family: $bebas;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: $text-white;
+  cursor: pointer;
 
   @media (max-width: $tablet-width) {
-    padding: 0;
-    padding-right: 10px;
-    box-sizing: border-box;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 0;
+    font-size: 20px;
+    line-height: 20px;
   }
-}
-
-.header__button {
-  padding: 0;
-  padding-top: 5px;
-  margin: 0;
-
-  @media (max-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.header__button button {
-  width: 160px;
-  min-height: 40px;
-  padding: 5px;
-  margin: 0;
-  background: none;
-  border: 1px solid $text-white;
-  border-radius: 3px;
-  font-family: $roboto;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: $text-white;
-  box-sizing: border-box;
-  user-select: none;
-  cursor: pointer;
-  transition: all 0.5s ease;
 
   &:hover {
     opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 0.8;
+    border: none;
+    box-shadow: 0 0 25px $text-white;
   }
 
   &:active {

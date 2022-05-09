@@ -1,63 +1,151 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание проекта">
     <title>Фитнес-центр Supergym</title>
+    <link rel="preload" href="fonts/BebasNeue-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/BebasNeue-Bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/BebasNeue-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/BebasNeue-Regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/RobotoCondensed-Bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/RobotoCondensed-Light.woff" as="font" type="font/woff" crossorigin>
+    <link rel="icon" href="favicon/favicon.ico">
+    <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <div class="container"></div>
-      </header>
-      <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+
+<!-- head end -->
+<!-- body start -->
+<!-- header start -->
+
+  <body class="page__body">
+    <header class="page__header header">
+      <div class="header__wrapper wrapper">
+        <div class="header__logo logo">
+          <a title="Вы находитесь на главной странице">
+            <svg width="89" height="20" aria-label="Логотип компании 'Supergym'">
+              <use xlink:href="img/sprite_auto.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="header__number">
+          <a href="tel:88005555555">
+            8-800-555-55-55
+          </a>
+        </div>
+      </div>
+    </header>
+
+<!-- header end -->
+<!-- main start -->
+<!-- main-block start -->
+
+    <main class="page__main">
+      <h1 class="visually-hidden">Фитнес-центр Supergym в городе Омск</h1>
+      <section class="main-block">
+        <h2 class="visually-hidden">Краткая информация о нас</h2>
+        <div class="main-block__wrapper wrapper">
+          <div class="main-block__description">
+            <div class="main-block__city">
+              <p>омск</p>
+            </div>
+            <div class="main-block__name">
+              <p>Фитнес центр</p>
+            </div>
+            <div class="main-block__services">
+              <ul>
+                <li>Тренажёрный зал</li>
+                <li>Групповые занятия</li>
+                <li>Кардио-зона</li>
+              </ul>
+            </div>
+            <a href="#subscriptions" data-link-scroll>Купить абонемент</a>
           </div>
-        </section>
-      </main>
-      <footer>
-        <div class="container"></div>
-      </footer>
-    </div>
+          <div class="main-block__image">
+            <picture>
+              <source type="image/webp" media="(min-width: 768px) and (max-width: 1199px)" srcset="img/content/main-block_tablet.webp 1x, img/content/main-block_tablet_2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/main-block_desktop.webp 1x, img/content/main-block_descktop_2x.webp 2x">
 
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
+              <source media="(min-width: 768px) and (max-width: 1199px)" srcset="img/content/main-block_tablet.jpg 1x, img/content/main-block_tablet_2x.jpg 2x">
+
+              <!--desctop 1х: 500px; 2x: 1000px;
+                  tablet 1х: 324px; 2x: 648px; -->
+              <img src="img/content/main-block_desktop.jpg" srcset="img/content/main-block_desktop_2x.jpg 2x" width="500" height="556" alt="Изображение тренера в футболке супермена">
+            </picture>
+          </div>
+          <div class="main-block__socials">
+            <ul>
+              <li>
+                <a href="sitemap.html#page-facebook">Fb</a>
+              </li>
+              <li>
+                <a href="sitemap.html#page-vk">vk</a>
+              </li>
+              <li>
+                <a href="sitemap.html#page-insta">ig</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
+<!-- main-block end -->
+<!-- gym start -->
+
+      <section class="gym">
+        <div class="gym__description wrapper">
+          <div class="gym__title">
+            <h2>Тренажерный зал</h2>
+            <p>Просторный зал площадью 900 кв/м</p>
+          </div>
+          <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+          <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
         </div>
-      </div>
-    </div>
+        <div class="gym__image">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/gym_mobile.webp 1x, img/content/gym_mobile_2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/gym_tablet.webp 1x, img/content/gym_tablet_2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/gym_desktop.webp 1x, img/content/gym_descktop_2x.webp 2x">
 
+            <source media="(max-width: 767px)" srcset="img/content/gym_mobile.jpg 1x, img/content/gym_mobile_2x.jpg 2x">
+            <source media="(max-width: 1199px)" srcset="img/content/gym_tablet.jpg 1x, img/content/gym_tablet_2x.jpg 2x">
+
+            <!--desctop 1х: 660px; 2x: 1320px;
+                tablet 1х: 678px; 2x: 1356px;
+                mobile 1х: 320px; 2x: 640px; -->
+            <img src="img/content/gym_desktop.jpg" srcset="img/content/gym_desktop_2x.jpg 2x" width="660" height="401" alt="Изображение тренажёрного зала">
+          </picture>
+        </div>
+        <div class="gym__video">
+          <div class="gym__video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-video-player></iframe>
+            <img src="img/content/video-start.png" width="364" height="228" alt="Заставка видеофайла, на которой изображён тренажёрный зал">
+            <div class="gym__play-video" tabindex="0" data-play>
+              <div class="gym__play-video-wrapper"></div>
+              <button type="button" tabindex="-1"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- gym end -->
+
+
+    </main>
+
+<!-- main end -->
+<!-- footer start -->
+
+    <footer class="page__footer footer">
+
+    </footer>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

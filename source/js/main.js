@@ -1,5 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {anchor, toSlide} from './modules/smooth-scroll/smooth-scroll.js';
+import {playButton, videoPlayer, managePlayer} from './modules/video-player/video-player.js';
 
 // ---------------------------------
 
@@ -11,6 +13,16 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   // Modules
+
+  // Плавный скролл по якорям из навигации
+  anchor.addEventListener('click', toSlide);
+
+
+  // Добвить видео на страницу
+  videoPlayer.classList.add('close');
+  playButton.addEventListener('click', managePlayer);
+
+
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

@@ -10,6 +10,20 @@ $roboto: "Roboto Condensed", "Arial", sans-serif;
 $bebas: "Bebas Neue", "Arial", sans-serif;
 
 // Colors
+$text-dark-blue: #102654;
+$text-opacity: rgba(16, 38, 84, 0.5);
+$text-white: #ffffff;
+
+$border-opacity: rgba(120, 120, 120, 0.2);
+$border-active: #d10a42;
+
+$background-gray: #f8f9fc;
+
+$overlay-color: rgba(20, 54, 122, 0.5);
+
+$gradient-color: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+$gradient-background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+
 /*$dark-blue: #041827;
 $background-header: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
 $background-blue: rgba(4, 24, 39, 0.5);

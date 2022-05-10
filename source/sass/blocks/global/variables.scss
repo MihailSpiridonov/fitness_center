@@ -11,6 +11,9 @@ $bebas: "Bebas Neue", "Arial", sans-serif;
 
 // Colors
 $text-dark-blue: #102654;
+$text-blue: #103aae;
+$text-dark-gray: #495a7d;
+$text-light-gray: #e8e8e8;
 $text-opacity: rgba(16, 38, 84, 0.5);
 $text-white: #ffffff;
 
@@ -23,6 +26,7 @@ $overlay-color: rgba(20, 54, 122, 0.5);
 
 $gradient-color: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
 $gradient-background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$card-hover: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 
 /*$dark-blue: #041827;
 $background-header: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);

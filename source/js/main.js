@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {anchor, toSlide} from './modules/smooth-scroll/smooth-scroll.js';
 import {playButton, videoPlayer, managePlayer} from './modules/video-player/video-player.js';
+import {subscriptions, prices, manageSubscription} from './modules/subscriptions/subscriptions.js';
 
 // ---------------------------------
 
@@ -21,6 +22,21 @@ window.addEventListener('DOMContentLoaded', () => {
   // Добвить видео на страницу
   videoPlayer.classList.add('close');
   playButton.addEventListener('click', managePlayer);
+
+
+  // Переключение цены абонементов взависимости от их срока действия
+  for (let i = 0; i < subscriptions.length; i++) {
+    const subscription = subscriptions[i];
+    subscription.addEventListener('click', manageSubscription);
+  }
+
+
+  // Добавление тени к цене
+  for (let i = 0; i < prices.length; i++) {
+    const price = prices[i];
+    const priceText = price.children[0].textContent;
+    price.children[1].textContent = priceText;
+  }
 
 
   // ---------------------------------

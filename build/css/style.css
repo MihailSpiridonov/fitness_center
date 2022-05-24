@@ -1926,10 +1926,10 @@ img {
   font-weight: 700;
   font-size: 71px;
   line-height: 106px;
+  -webkit-text-fill-color: transparent;
   background: -o-linear-gradient(322.39deg, #d10a42 0%, #0041ca 45.58%);
   background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1962,10 +1962,10 @@ img {
   text-align: center;
   font-size: 74px;
   line-height: 60px;
+  -webkit-text-fill-color: transparent;
   color: #ffffff;
   background: #ffffff;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 

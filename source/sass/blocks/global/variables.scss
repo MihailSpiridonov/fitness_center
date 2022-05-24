@@ -1,7 +1,6 @@
 // Viewports
-$desktop-width-popup: 1920px;
 $desktop-width-only: 1200px;
-//$small-desktop-width: 1064px;
+$small-desktop-width: 1280px;
 $tablet-width: 1199px;
 $mobile-width: 767px;
 
@@ -12,36 +11,32 @@ $bebas: "Bebas Neue", "Arial", sans-serif;
 // Colors
 $text-dark-blue: #102654;
 $text-blue: #103aae;
+$text-advantage: #2e35ac;
 $text-dark-gray: #495a7d;
 $text-light-gray: #e8e8e8;
-$text-opacity: rgba(16, 38, 84, 0.5);
+$text-opacity-50: rgba(16, 38, 84, 0.5);
+$text-opacity-89: rgba(16, 38, 84, 0.89);
 $text-white: #ffffff;
+$text-card: #b6bdcc;
 
+$color-button: #afafaf;
+
+$border-color: #74819c;
 $border-opacity: rgba(120, 120, 120, 0.2);
 $border-active: #d10a42;
+$border-advantage: rgba(209, 10, 66, 0.2);
 
 $background-gray: #f8f9fc;
 $background-red: #ed0233;
+$background-blue: #1c3374;
+$background-footer: #030a1a;
 
 $overlay-color: rgba(20, 54, 122, 0.5);
+
+$color-error: #ff0000;
+$background-error: #ffcccc;
 
 $gradient-color: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
 $gradient-background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 $card-hover: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-
-/*$dark-blue: #041827;
-$background-header: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
-$background-blue: rgba(4, 24, 39, 0.5);
-$background-blue--darker: #0474a4;
-$background-blue--lighter: #00b3ff;
-$background-blue--light: #00b2ff;
-$input-background: rgba(4, 20, 39, 0.15);
-$border-white: rgba(248, 253, 255, 0.7);
-$border-grey: #ebebeb;
-$color-grey: #c4c4c4;
-$text-white: #f2f5f7;
-$text-white-absolute: #ffffff;
-$text-white-absolute-70: rgba(255, 255, 255, 0.7);
-$color-error: #ff0000;
-$background-error: #ffcccc;
-$color-overlay: rgba(3, 16, 27, 0.7);*/
+$gradient-advantage: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);

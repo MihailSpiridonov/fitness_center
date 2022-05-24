@@ -8,7 +8,7 @@
   @media (max-width: $tablet-width) {
     min-height: 554px;
     margin-top: -67px;
-    margin-bottom: 100px;
+    margin-bottom: 95px;
   }
 
   @media (max-width: $mobile-width) {
@@ -24,7 +24,6 @@
   padding-left: 96px;
   color: $text-white;
   box-sizing: border-box;
-  //background: $gradient-color;
 
   @media (max-width: $tablet-width) {
     padding: 82px 0;
@@ -50,9 +49,9 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 100%;
+    width: 290px;
     padding-top: 0;
-    margin-right: 0;
+    margin: 0 auto;
   }
 }
 
@@ -187,6 +186,7 @@
   text-transform: uppercase;
   color: $text-white;
   border: 4px solid $text-white;
+  transition: all 0.5s ease;
   cursor: pointer;
 
   @media (max-width: $tablet-width) {
@@ -215,6 +215,7 @@
   position: relative;
   width: 500px;
   height: 556px;
+  background-color: #131b44;
 
   @media (max-width: $tablet-width) {
     width: 324px;
@@ -272,6 +273,7 @@
   color: $text-white;
   text-transform: uppercase;
   box-sizing: border-box;
+  transition: all 0.5s ease;
   cursor: pointer;
 
   &:hover {

@@ -3,8 +3,8 @@
   display: flex;
   justify-content: space-between;
   max-width: 1160px;
-  min-height: 401px;
   width: 95vw;
+  min-height: 401px;
   padding: 0;
   padding-left: 4.5%;
   margin: 0 auto;
@@ -21,6 +21,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    justify-content: flex-start;
     min-width: 320px;
     width: 100vw;
     min-height: 740px;
@@ -141,6 +142,7 @@
   height: 401px;
   padding: 0;
   margin: 0;
+  background-color: #afb0bc;
 
   @media (max-width: $tablet-width) {
     min-width: 678px;
@@ -171,23 +173,20 @@
 
 .gym__video {
   position: absolute;
-  z-index: 1;
   bottom: -118px;
   left: calc(50% - 143px);
+  z-index: 1;
   width: 364px;
   min-height: 228px;
-  padding: 0;
-  margin: 0 auto;
   background-color: $overlay-color;
+  box-sizing: border-box;
 
   @media (max-width: $tablet-width) {
     bottom: -83px;
     left: calc(50%);
     transform: translateX(-50%);
     width: 39%;
-    min-height: 0;
-    height: 0;
-    padding-top: 25%;
+    min-height: 167px;
   }
 
   @media (max-width: $mobile-width) {
@@ -196,35 +195,45 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    min-height: 0;
-    padding-top: 53%;
     margin: 0;
   }
 }
 
 .gym__video-wrapper {
-  //position: absolute;
-  //top: 0;
-  //left: 0;
-  //content: "";
-  z-index: 20;
+  z-index: 2;
   width: 100%;
   height: 100%;
-  min-height: 100%;
-  //padding: 0;
-  //margin: 0;
+  min-height: 228px;
+  padding: 0;
+  margin: 0;
   background-color: $overlay-color;
+
+  @media (max-width: $tablet-width) {
+    min-height: 167px;
+  }
+
+  @media (max-width: $mobile-width) {
+    box-sizing: border-box;
+  }
 }
 
 .gym__video img {
   position: absolute;
-  top: 0;
-  left: 0;
+  display: block;
   z-index: -1;
   width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
+  background-color: $overlay-color;
+
+  @media (max-width: $mobile-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    box-sizing: border-box;
+  }
 }
 
 .gym__video iframe {
@@ -274,6 +283,7 @@
   border-radius: 50%;
   background: $gradient-color;
   box-sizing: border-box;
+  transition: all 0.5s ease;
   cursor: pointer;
 
   &:hover {

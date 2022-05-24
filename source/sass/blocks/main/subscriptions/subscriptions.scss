@@ -6,13 +6,13 @@
 
   @media (max-width: $tablet-width) {
     min-height: 1770px;
-    margin-bottom: 100px;
+    margin-bottom: 95px;
   }
 
   @media (max-width: $mobile-width) {
     position: relative;
     min-height: 1487px;
-    margin-bottom: 68px;
+    margin-bottom: 70px;
   }
 }
 
@@ -24,7 +24,7 @@
 
   @media (max-width: $tablet-width) {
     padding: 100px 0;
-    padding-top: 55px;
+    padding-top: 60px;
   }
 
   @media (max-width: $mobile-width) {
@@ -66,6 +66,7 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
+    padding-bottom: 12px;
   }
 }
 
@@ -92,7 +93,9 @@
   box-sizing: border-box;
   font-size: 20px;
   line-height: 30px;
-  color: $text-opacity;
+  color: $text-opacity-50;
+  transition: all 0.5s ease;
+  cursor: pointer;
 
   &:hover {
     color: $text-dark-blue;
@@ -122,11 +125,16 @@
   }
 }
 
-.subscriptions__period li.active a {
+.subscriptions__period li.actived a {
   padding-bottom: 12px;
   color: $text-dark-blue;
   border-bottom: 2px solid $border-active;
+  box-shadow: none;
   cursor: default;
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 14px;
+  }
 }
 
 .subscriptions__option ul {
@@ -144,7 +152,7 @@
 
 .subscriptions__option li {
   width: 32%;
-  min-height: 448px;
+  min-height: 440px;
   padding: 7px;
   margin: 0;
   margin-right: 40px;
@@ -156,8 +164,7 @@
   @media (max-width: $tablet-width) {
     width: 65%;
     margin: 0 auto;
-    margin-right: 0;
-    margin-bottom: 39px;
+    margin-bottom: 31px;
   }
 
   @media (max-width: $mobile-width) {

@@ -7,10 +7,10 @@
 @import "blocks/global/global.scss";
 @import "blocks/global/page/page.scss";
 @import "blocks/global/wrapper/wrapper.scss";
+@import "blocks/logo/logo.scss";
 
 // Header
 @import "blocks/header/header.scss";
-@import "blocks/logo/logo.scss";
 
 // Main
 @import "blocks/main/main-block/main-block.scss";
@@ -18,19 +18,18 @@
 @import "blocks/main/subscriptions/subscriptions.scss";
 @import "blocks/main/card/card.scss";
 @import "blocks/main/games/games.scss";
-//@import "blocks/main/subscription/subscription.scss";
-//@import "blocks/main/subscription/subscription.scss";
-//@import "blocks/main/subscription/subscription.scss";
+@import "blocks/main/coachs/coachs.scss";
 @import "blocks/main/advantages/advantages.scss";
-@import "blocks/main/section-form/section-form.scss";
+@import "blocks/main/sale/sale.scss";
+@import "blocks/main/comments/comments.scss";
+@import "blocks/main/contacts-and-form/contacts-and-form.scss";
 @import "blocks/main/form/form.scss";
+@import "blocks/main/contacts/contacts.scss";
 
 // Footer
 @import "blocks/footer/footer.scss";
+@import "blocks/footer/navigation/navigation.scss";
 @import "blocks/footer/socials/socials.scss";
-//@import "blocks/footer/site-sections/site-sections.scss";
-//@import "blocks/footer/contacts/contacts.scss";
-//@import "blocks/footer/accordion/accordion.scss";
 
 // Разводящая страница
 @import "page-for-link/page-for-link.scss";

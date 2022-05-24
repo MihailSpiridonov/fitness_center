@@ -1,17 +1,17 @@
 .games {
   display: flex;
   min-height: 500px;
-  margin-bottom: 120px;
+  margin-bottom: 117px;
   color: $text-white;
 
   @media (max-width: $tablet-width) {
     min-height: 292px;
-    margin-bottom: 100px;
+    margin-bottom: 95px;
   }
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
-    margin-bottom: 60px;
+    margin-bottom: 68px;
   }
 }
 
@@ -36,7 +36,7 @@
   box-sizing: border-box;
 
   @media (max-width: $tablet-width) {
-    padding: 50px 0;
+    padding: 47px 0;
     padding-bottom: 40px;
   }
 
@@ -82,7 +82,8 @@
   }
 }
 
-.games__date-time time {
+.games__date-time time,
+.games__calendar-date {
   width: min-content;
   padding-top: 4px;
   border-top: 1px solid $text-white;
@@ -91,6 +92,11 @@
   @media (max-width: $tablet-width) {
     padding-top: 0;
   }
+}
+
+.games__calendar-date time {
+  padding-top: 0;
+  border-top: none;
 }
 
 .games__date,
@@ -107,7 +113,7 @@
   }
 }
 
-.games__date time {
+.games__calendar-date {
   display: flex;
 }
 
@@ -155,7 +161,7 @@
   }
 }
 
-.games__month {
+.games__month time {
   display: flex;
   flex-direction: column;
 }
@@ -244,6 +250,7 @@
   height: 100%;
   padding: 0;
   margin: 0;
+  background-color: #2e306d;
 
   @media (max-width: $tablet-width) {
     width: 57%;

@@ -13,6 +13,7 @@
 
 .contacts-and-form__wrapper {
   display: flex;
+  align-items: stretch;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
@@ -23,7 +24,6 @@
   display: block;
   width: 50%;
   min-width: 683px;
-  height: 100%;
   min-height: 337px;
   padding-left: 7.5%;
   box-sizing: border-box;
@@ -43,14 +43,14 @@
 
 .contacts-and-form__contacts {
   width: 50%;
-  height: 100%;
-  padding-right: 11%;
+  padding-left: 9%;
+  margin-right: 0;
   box-sizing: border-box;
 
   @media (max-width: $tablet-width) {
     width: 100%;
     min-height: 350px;
-    padding-right: 0;
+    padding-left: 0;
   }
 
   @media (max-width: $mobile-width) {

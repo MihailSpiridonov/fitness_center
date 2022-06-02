@@ -5,12 +5,12 @@
 
   @media (max-width: $tablet-width) {
     min-height: 324px;
-    margin-bottom: 100px;
+    margin-bottom: 95px;
   }
 
   @media (max-width: $mobile-width) {
     min-height: 409px;
-    margin-bottom: 45px;
+    margin-bottom: 37px;
   }
 }
 
@@ -24,7 +24,7 @@
   letter-spacing: 0.03em;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
     font-size: 42px;
     line-height: 42px;
   }
@@ -38,7 +38,7 @@
 
 .comments__wrapper {
   position: relative;
-  width: 50%;
+  width: 48%;
   margin: 0 auto;
 
   @media (max-width: $tablet-width) {
@@ -47,6 +47,7 @@
 
   @media (max-width: $mobile-width) {
     width: 78%;
+    min-height: 335px;
   }
 }
 
@@ -60,7 +61,7 @@
   display: flex;
   width: 100%;
   height: 100%;
-  padding: 0;
+  padding: 5px;
   margin: 0;
   list-style: none;
   box-sizing: border-box;
@@ -98,6 +99,9 @@
 }
 
 .comments li.active-comment::after {
+  width: 110%;
+  height: 110%;
+
   @media (max-width: $tablet-width) {
     position: absolute;
     top: 0;
@@ -105,8 +109,8 @@
     content: "";
     transform: translateX(-5%) translateY(-5%);
     z-index: 3;
-    width: 110%;
-    height: 110%;
+    width: 100%;
+    height: 100%;
     box-shadow: 0 0 25px $text-opacity-50;
   }
 }
@@ -131,7 +135,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content 1fr;
     column-gap: 15px;
-    row-gap: 11px;
+    row-gap: 4px;
     padding-top: 50px;
     padding-bottom: 30px;
   }

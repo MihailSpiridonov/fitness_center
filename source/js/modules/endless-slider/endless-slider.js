@@ -14,6 +14,7 @@ const movePositionEndless = SLIDES_TO_SCROLL * itemWidth;
 for (let i = 0; i < itemsEndless.length; i++) {
   const item = itemsEndless[i];
   item.style.minWidth = `${itemWidth}px`;
+  item.classList.add('active-comment');
 }
 
 function checkButton() {

@@ -173,7 +173,7 @@
 
 .gym__video {
   position: absolute;
-  bottom: -118px;
+  top: 289px;
   left: calc(50% - 143px);
   z-index: 1;
   width: 364px;
@@ -182,6 +182,7 @@
   box-sizing: border-box;
 
   @media (max-width: $tablet-width) {
+    top: auto;
     bottom: -83px;
     left: calc(50%);
     transform: translateX(-50%);
@@ -209,18 +210,24 @@
   background-color: $overlay-color;
 
   @media (max-width: $tablet-width) {
-    min-height: 167px;
+    min-height: 0;
+    height: 0;
+    padding-top: 63%;
   }
 
   @media (max-width: $mobile-width) {
+    min-height: 0;
+    padding-top: 52%;
     box-sizing: border-box;
   }
 }
 
 .gym__video img {
   position: absolute;
-  display: block;
-  z-index: -1;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: -10;
   width: 100%;
   height: 100%;
   padding: 0;
@@ -228,10 +235,6 @@
   background-color: $overlay-color;
 
   @media (max-width: $mobile-width) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
     box-sizing: border-box;
   }
 }
@@ -254,24 +257,6 @@
 
 .play {
   display: block;
-}
-
-.gym__play-video-wrapper {
-  position: absolute;
-  top: calc(50% - 52px);
-  left: calc(50% - 52px);
-  width: 98px;
-  height: 98px;
-  border-radius: 50%;
-  border: 2px solid $border-active;
-  opacity: 0.2;
-
-  @media (max-width: $tablet-width) {
-    top: calc(50% - 37px);
-    left: calc(50% - 37px);
-    width: 70px;
-    height: 70px;
-  }
 }
 
 .gym__play-video {
@@ -308,6 +293,24 @@
   }
 }
 
+.gym__play-video-wrapper {
+  position: absolute;
+  top: calc(50% - 52px);
+  left: calc(50% - 52px);
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  border: 2px solid $border-active;
+  opacity: 0.2;
+
+  @media (max-width: $tablet-width) {
+    top: calc(50% - 37px);
+    left: calc(50% - 37px);
+    width: 70px;
+    height: 70px;
+  }
+}
+
 .gym__play-video button {
   position: absolute;
   top: calc(50% - 7px);
@@ -320,6 +323,7 @@
   border-left: 12px solid $text-white;
   border-bottom: 7px solid transparent;
   border-right: none;
+  border-radius: none;
   background-color: transparent;
   box-sizing: border-box;
 

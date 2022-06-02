@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {anchor, toSlide} from './modules/smooth-scroll/smooth-scroll.js';
-import {playButton, videoPlayer, managePlayer} from './modules/video-player/video-player.js';
+import {playButton, videoPlayer, managePlayer, managePlayerKeyboard, addSrc} from './modules/video-player/video-player.js';
 import {subscriptions, prices, removeActiveClass, getSubscription} from './modules/subscriptions/subscriptions.js';
 import {buttonNext, buttonBack, seeCoachButtonBack, seeCoachButtonNext, items} from './modules/slider/slider.js';
 import {buttonNextEndless, buttonBackEndless, checkButton, seeButtonBack, seeButtonNext} from './modules/endless-slider/endless-slider.js';
@@ -24,8 +24,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
   // Добвить видео на страницу
+  setTimeout(addSrc, 10000);
   videoPlayer.classList.add('close');
   playButton.addEventListener('click', managePlayer);
+  playButton.addEventListener('keydown', managePlayerKeyboard);
 
 
   // Переключение цены абонементов взависимости от их срока действия
@@ -51,7 +53,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Слайдер в блоке тренеров
   buttonBack.addEventListener('click', seeCoachButtonBack);
-
   buttonNext.addEventListener('click', seeCoachButtonNext);
 
 

@@ -7,6 +7,10 @@
     padding-top: 10px;
     padding-left: 0;
   }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 0;
+  }
 }
 
 .socials--footer {
@@ -15,6 +19,10 @@
 
   @media (max-width: $tablet-width) {
     padding-top: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    transform: translateX(0);
   }
 }
 
@@ -73,6 +81,16 @@
     @media (max-width: $tablet-width) {
       margin-right: 15px;
     }
+
+    @media (max-width: $mobile-width) {
+      margin-right: 29px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 30px;
+    height: 30px;
+    margin-right: 25px;
   }
 }
 

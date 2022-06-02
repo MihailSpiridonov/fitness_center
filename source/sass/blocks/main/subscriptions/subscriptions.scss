@@ -128,6 +128,7 @@
 .subscriptions__period li.actived a {
   padding-bottom: 12px;
   color: $text-dark-blue;
+  outline: none;
   border-bottom: 2px solid $border-active;
   box-shadow: none;
   cursor: default;
@@ -138,47 +139,49 @@
 }
 
 .subscriptions__option ul {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  gap: 40px;
   padding: 0;
   margin: 0;
   list-style: none;
 
   @media (max-width: $tablet-width) {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr 442px 1fr;
+    gap: 37px;
+  }
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr 290px 1fr;
+  }
+
+  @media (max-width: $min-mobile-width) {
+    grid-template-columns: 100%;
   }
 }
 
 .subscriptions__option li {
-  width: 32%;
   min-height: 440px;
   padding: 7px;
   margin: 0;
-  margin-right: 40px;
   background: none;
   background-color: $text-white;
   box-sizing: border-box;
   z-index: 1;
+  overflow: hidden;
 
   @media (max-width: $tablet-width) {
-    width: 65%;
-    margin: 0 auto;
-    margin-bottom: 31px;
+    grid-column: 2 / -2;
   }
 
   @media (max-width: $mobile-width) {
-    width: 100%;
-    min-height: 382px;
-    margin-bottom: 37px;
+    position: relative;
+    min-height: 0;
+    padding-top: 129%;
   }
 
   &:last-child {
     margin-right: 0;
-
-    @media (max-width: $tablet-width) {
-      margin: 0 auto;
-    }
   }
 
   &:hover {

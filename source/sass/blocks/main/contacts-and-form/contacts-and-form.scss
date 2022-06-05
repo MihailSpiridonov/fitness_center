@@ -7,7 +7,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    min-height: 893px;
+    min-height: 885px;
   }
 }
 
@@ -43,7 +43,6 @@
 
 .contacts-and-form__contacts {
   width: 50%;
-  padding-left: 9%;
   margin-right: 0;
   box-sizing: border-box;
 
@@ -54,6 +53,6 @@
   }
 
   @media (max-width: $mobile-width) {
-    min-height: 500px;
+    min-height: 490px;
   }
 }

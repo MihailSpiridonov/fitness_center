@@ -413,7 +413,7 @@ template {
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: local("Roboto Condensed"), url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+  src: local("Roboto Condensed"), url("../fonts/Roboto-Condensed.woff2") format("woff2"), url("../fonts/Roboto-Condensed.woff") format("woff");
 }
 
 @font-face {
@@ -598,7 +598,7 @@ img {
 .main-block__city {
   padding: 0;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 29px;
 }
 
 .main-block__city p {
@@ -629,12 +629,12 @@ img {
 
 .main-block__services {
   position: relative;
-  margin-bottom: 65px;
+  margin-bottom: 55px;
 }
 
 .main-block__services ul {
   position: absolute;
-  top: -80px;
+  top: -90px;
   left: -80px;
   padding: 0;
   margin: 0;
@@ -704,7 +704,6 @@ img {
 
 .main-block__image img {
   position: absolute;
-  content: "";
   top: 0;
   left: 0;
   width: 100%;
@@ -783,7 +782,7 @@ img {
   padding: 0;
   padding-left: 4.5%;
   margin: 0 auto;
-  margin-bottom: 235px;
+  margin-bottom: 240px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -792,7 +791,7 @@ img {
   width: 31%;
   min-width: 355px;
   padding: 0;
-  padding-top: 46px;
+  padding-top: 50px;
   margin: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -824,7 +823,7 @@ img {
 .gym__title h2 {
   padding: 0;
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 7px;
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-weight: 700;
   font-size: 49px;
@@ -889,8 +888,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  content: "";
-  z-index: -10;
+  z-index: -1;
   width: 100%;
   height: 100%;
   padding: 0;
@@ -994,11 +992,14 @@ img {
 .subscriptions__wrapper {
   height: 100%;
   padding: 120px 0;
-  padding-top: 75px;
+  padding-top: 115px;
   text-align: center;
 }
 
 .subscriptions__wrapper h2 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 38px;
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-weight: 700;
   font-size: 49px;
@@ -1007,7 +1008,7 @@ img {
 }
 
 .subscriptions__period {
-  padding-bottom: 40px;
+  padding-bottom: 43px;
 }
 
 .subscriptions__period ul {
@@ -1118,7 +1119,6 @@ img {
   position: absolute;
   top: 0;
   right: 0;
-  content: "";
   z-index: 0;
 }
 
@@ -1231,7 +1231,7 @@ img {
 .card a {
   position: absolute;
   left: 50%;
-  bottom: 18px;
+  bottom: 20px;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -1489,7 +1489,6 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  content: "";
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1504,7 +1503,7 @@ img {
 .coachs h2 {
   padding: 0;
   margin: 0;
-  margin-bottom: 55px;
+  margin-bottom: 52px;
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-weight: 700;
   font-size: 49px;
@@ -1608,7 +1607,6 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  content: "";
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -2244,7 +2242,6 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  content: "";
   width: 100%;
   height: 100%;
 }
@@ -2441,7 +2438,6 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  content: "";
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -2611,7 +2607,6 @@ img {
 
 .contacts-and-form__contacts {
   width: 50%;
-  padding-left: 9%;
   margin-right: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -2794,7 +2789,7 @@ img {
   max-width: 580px;
   padding-top: 65px;
   padding-bottom: 60px;
-  margin-left: 0;
+  margin-left: 18%;
   margin-right: auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -3293,7 +3288,7 @@ img {
   .main-block {
     min-height: 554px;
     margin-top: -67px;
-    margin-bottom: 95px;
+    margin-bottom: 100px;
   }
 
   .main-block__wrapper {
@@ -3307,7 +3302,7 @@ img {
   }
 
   .main-block__city {
-    margin-bottom: 8px;
+    margin-bottom: 15px;
   }
 
   .main-block__city p {
@@ -3320,12 +3315,12 @@ img {
   }
 
   .main-block__services {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
 
   .main-block__services ul {
-    top: -75px;
-    left: -35px;
+    top: -80px;
+    left: -32px;
   }
 
   .main-block__services li {
@@ -3439,10 +3434,11 @@ img {
 
   .subscriptions__wrapper {
     padding: 100px 0;
-    padding-top: 60px;
+    padding-top: 100px;
   }
 
   .subscriptions__wrapper h2 {
+    margin-bottom: 28px;
     font-size: 42px;
     line-height: 42px;
   }
@@ -3964,7 +3960,7 @@ img {
   .main-block {
     min-height: 491px;
     margin-top: -43px;
-    margin-bottom: 65px;
+    margin-bottom: 70px;
   }
 
   .main-block__wrapper {
@@ -3981,7 +3977,7 @@ img {
   .main-block__city {
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
   }
 
   .main-block__city p {
@@ -4001,11 +3997,11 @@ img {
   .main-block__services {
     width: 300px;
     margin: 0 auto;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
 
   .main-block__services ul {
-    top: -65px;
+    top: -75px;
     left: -5px;
   }
 
@@ -4091,12 +4087,13 @@ img {
 
   .subscriptions__wrapper {
     padding: 40px 0;
+    padding-top: 70px;
   }
 
   .subscriptions__wrapper h2 {
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
   .subscriptions__period ul {
@@ -4479,11 +4476,11 @@ img {
 
   .comments {
     min-height: 409px;
-    margin-bottom: 37px;
+    margin-bottom: 43px;
   }
 
   .comments h2 {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
     font-size: 32px;
     line-height: 32px;
   }
@@ -4569,7 +4566,7 @@ img {
   }
 
   .contacts-and-form {
-    min-height: 893px;
+    min-height: 885px;
   }
 
   .contacts-and-form__form {
@@ -4578,7 +4575,7 @@ img {
   }
 
   .contacts-and-form__contacts {
-    min-height: 500px;
+    min-height: 490px;
   }
 
   .form__wrapper {
@@ -4615,6 +4612,7 @@ img {
   .contacts__wrapper {
     width: 90%;
     padding-top: 65px;
+    padding-bottom: 55px;
   }
 
   .contacts h2 {

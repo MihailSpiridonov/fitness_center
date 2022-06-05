@@ -8,13 +8,13 @@
   @media (max-width: $tablet-width) {
     min-height: 554px;
     margin-top: -67px;
-    margin-bottom: 95px;
+    margin-bottom: 100px;
   }
 
   @media (max-width: $mobile-width) {
     min-height: 491px;
     margin-top: -43px;
-    margin-bottom: 65px;
+    margin-bottom: 70px;
   }
 }
 
@@ -58,16 +58,16 @@
 .main-block__city {
   padding: 0;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 29px;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 8px;
+    margin-bottom: 15px;
   }
 
   @media (max-width: $mobile-width) {
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
   }
 }
 
@@ -122,22 +122,22 @@
 
 .main-block__services {
   position: relative;
-  margin-bottom: 65px;
+  margin-bottom: 55px;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
 
   @media (max-width: $mobile-width) {
     width: 300px;
     margin: 0 auto;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
 }
 
 .main-block__services ul {
   position: absolute;
-  top: -80px;
+  top: -90px;
   left: -80px;
   padding: 0;
   margin: 0;
@@ -146,12 +146,12 @@
   list-style: none;
 
   @media (max-width: $tablet-width) {
-    top: -75px;
-    left: -35px;
+    top: -80px;
+    left: -32px;
   }
 
   @media (max-width: $mobile-width) {
-    top: -65px;
+    top: -75px;
     left: -5px;
   }
 }
@@ -229,7 +229,6 @@
 
 .main-block__image img {
   position: absolute;
-  content: "";
   top: 0;
   left: 0;
   width: 100%;

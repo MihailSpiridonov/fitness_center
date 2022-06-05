@@ -13,10 +13,6 @@ import {phoneInputs, onPhoneKeyDown, onPhoneInput, onPhonePaste} from './modules
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
-  // ---------------------------------
-
-  iosVhFix();
-
   // Modules
 
   // Плавный скролл по якорям из навигации
@@ -84,6 +80,10 @@ window.addEventListener('DOMContentLoaded', () => {
   // Проверка форм на валидность
   form.addEventListener('submit', formSendForm);
 
+
+  // ---------------------------------
+
+  iosVhFix();
 
   // ---------------------------------
 

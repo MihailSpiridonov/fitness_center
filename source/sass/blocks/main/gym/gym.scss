@@ -8,7 +8,7 @@
   padding: 0;
   padding-left: 4.5%;
   margin: 0 auto;
-  margin-bottom: 235px;
+  margin-bottom: 240px;
   box-sizing: border-box;
 
   @media (max-width: $tablet-width) {
@@ -33,7 +33,7 @@
   width: 31%;
   min-width: 355px;
   padding: 0;
-  padding-top: 46px;
+  padding-top: 50px;
   margin: 0;
   box-sizing: border-box;
 
@@ -98,7 +98,7 @@
 .gym__title h2 {
   padding: 0;
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 7px;
   font-family: $bebas;
   font-weight: 700;
   font-size: 49px;
@@ -226,8 +226,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  content: "";
-  z-index: -10;
+  z-index: -1;
   width: 100%;
   height: 100%;
   padding: 0;
